@@ -39,7 +39,7 @@ Memory-Matching-Game/
 1. Download or clone this repository:
 
 
-git clone https://github.com/your-username/memory-matching-game.git
+git clone https://github.com/sheikhumaryounas/Memory-Matching-Game.git
 
 
 2. Open the project folder.  
