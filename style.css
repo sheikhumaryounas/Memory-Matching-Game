@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: rgb(66, 29, 130) ;
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+h1 {
+    margin-top: 25px;
+    color: white;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+#restart{
+    color: darkslateblue;
+    background-color:rgb(181, 167, 205) ;
+    border-radius: 5px;
+}
+.controls {
+    margin: 20px;
+    color: white;
+}
+
+.gameBoard {
+    width: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 15px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.card.flipped {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+    cursor: default;
+    box-shadow: none;
+}
+#moves{
+    color: white;
+}
